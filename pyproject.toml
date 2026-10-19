@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dupehunter"
+version = "0.1.0"
+description = "Fast and safe duplicate file finder. Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["duplicates", "cli", "files", "cleanup", "disk-space"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Topic :: System :: Filesystems",
+]
+
+[project.scripts]
+dupehunter = "dupehunter.cli:main"
+
+[tool.setuptools]
+packages = ["dupehunter"]
